@@ -260,13 +260,8 @@ footer p{
 /*スマホ縦*/
 @media screen and (max-width: 480px){
 
-.bg-switcher{
-    background-position: center center;
-    background-size: cover;
-}
-
 .bg-switcher img{
-    width: 70vw;
+    width: 70px;
     margin: auto;
 }
 
@@ -274,24 +269,33 @@ footer p{
     font-size: 20px;
 }
 
-
-
-.intro-content{
+.intro-contents{
     display: block;
     text-align: center;
+
+    flex-flow: column;
 }
+
+.intro-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+    flex-flow: column;
+  }
 
 .intro-content img{
     width: 90vw;
 }
 
-.intro-content-box{
+.intro-content{
     padding: 45px;
     width: 80vw;
     text-align: center;
 }
 
-.intro-content-box p{
+.intro-text{
     font-size: 13px;
 }
 
@@ -319,11 +323,6 @@ footer p{
 
 .course a{
     width: 30vw;
-}
-
-.images{
-    width: 80vw;
-    margin: 0 auto;
 }
 
 .map iframe{
