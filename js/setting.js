@@ -1,9 +1,10 @@
-particlesJS('hoge',{
+$(function(){
+particlesJS("hoge",{
     "particles":{
    
   //--シェイプの設定----------
         "number":{
-          "value":80, //シェイプの数
+          "value":30, //シェイプの数
           "density":{
             "enable":true, //シェイプの密集度を変更するか否か
             "value_area":200 //シェイプの密集度
@@ -63,7 +64,7 @@ particlesJS('hoge',{
   
   //--動きの設定----------
         "move":{
-          "speed":10, //シェイプの動くスピード
+          "speed":5, //シェイプの動くスピード
           "straight":false, //個々のシェイプの動きを止めるか否か
           "direction":"none", //エリア全体の動き(none、top、top-right、right、bottom-right、bottom、bottom-left、left、top-leftより選択)
           "out_mode":"out" //エリア外に出たシェイプの動き(out、bounceより選択)
@@ -137,3 +138,4 @@ particlesJS('hoge',{
       "resize":true //canvasのサイズ変更にわせて拡大縮小するか否か
     }
   );
+});

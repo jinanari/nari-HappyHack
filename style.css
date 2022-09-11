@@ -153,15 +153,18 @@ nav a:hover{
 }
 
 /* COURSES */
-
-
-#hoge{
-    height: 120vh;
-    width: 100vw;
-
-  margin:0 auto;
-  background-color: rgba(190, 213, 255, 0.6);
+#courses {
+    background-color: rgba(164, 198, 240, 0.6);
+  }
+  
+#hoge {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: -1;
 }
+
 
 .course-contents{
     display: flex;
@@ -216,9 +219,21 @@ nav a:hover{
 
 /* SLIDE */
 
-.slider img{
+.slider {
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  .slider img {
+    height: auto;
     width: 100%;
-}
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000;
+  }
+  
 
 /* ACCESS */
 #access{
