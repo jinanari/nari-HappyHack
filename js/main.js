@@ -5,7 +5,6 @@ $(function($){
         loop: true
     });
 
-
     $(window).scroll(function (){
         var targetElement = $('.fadein').offset().top;
         var scroll = $(window).scrollTop();
@@ -20,9 +19,15 @@ $(function($){
         arrows: true,
         autoplay: true,
         dots: true,
-        centerMode: true,
-        centerPadding: '20%',
-        slidesToShow: 2,
+        slidesToShow: 4,
+        responsive:[
+            {
+                breakpoint: 480,
+                settings:{
+                    slidesToShow:1,
+                }
+            },
+        ]
     });
 
 });
