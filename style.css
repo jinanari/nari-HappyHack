@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-/* outline: 2px red solid; */
+    /* outline: 2px red solid; */
 }
 
 body {
@@ -24,13 +24,14 @@ body {
 
 .bg-swicher img{
     width: 800px;
-    margin: 50px;
 }
 
 .bg-swicher h2{
     color: #fff;
     text-align: center;
     font-size: 40px;
+    font-style: oblique;
+    letter-spacing: 1px;
 }
 
 /* Navigation */
@@ -84,7 +85,6 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
     flex-flow: column;
   }
 
@@ -96,7 +96,6 @@ nav a:hover{
 
 .intro-text{
     line-height: 30px;
-    margin-bottom: 40px;
     text-align: left;
     font-family: 'MS PGothic', sans-serif;
 }
@@ -108,9 +107,9 @@ nav a:hover{
 
 .intro-text a{
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     text-decoration: none;
-    width: 150px;
+    width: 160px;
     height: 50px;
     color: #ffffff;
     border-radius: 12px;
@@ -155,6 +154,7 @@ nav a:hover{
 /* COURSES */
 #courses {
     background-color: rgba(164, 198, 240, 0.6);
+
   }
   
 #hoge {
@@ -165,14 +165,20 @@ nav a:hover{
     z-index: -1;
 }
 
+.course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
 .course-contents{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    padding: 20px 100px;
+    max-width: 1200px;
+    margin-bottom: 50px;
 }
 
 .course-content{
@@ -187,32 +193,36 @@ nav a:hover{
     flex-direction: column;
     box-shadow: 0 1px 3px rgba(106, 137, 152, 0.2);
 
-    justify-content: center;
     text-align: center;
 }
 
-.course-content img {
-    width: 90px;
-    height: 90px;
-    margin: 10px auto 0;
+.course_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 .course-content img{
-    margin-bottom: 40px;
-    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .course-content p{
-    margin: 20px;
     font-weight: bold;
     font-size: 15px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .course-content a{
     list-style: none;
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 13px;
     border-radius: 10px;
 }
@@ -273,18 +283,23 @@ footer p{
 .bg-swicher h2{
     font-size: 15px;
     margin: 15px;
+    padding: 15px;
 }
 
 nav{
     display:none;
 }
 
+.heading {
+    font-size: 30px;
+    padding: 20px;
+  }
 
 .intro-contents{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     flex-flow: column;
   }
 
@@ -302,6 +317,10 @@ nav{
 .intro-text p{
     width: 85%;
     font-size: 13px;
+}
+
+.intro-img2 .intro-img{
+    margin: 0px 10px;
 }
 
 .intro-img2{
@@ -348,59 +367,49 @@ nav{
     display: flex;
     width: 100%;
     flex-flow: column;
+
+    margin: 0px;
 }
 
 .intro-content2{
     display: flex;
     width: 100%;
     flex-flow: column;
+
+    margin: 0px;
 }
 
-.courses{
-    display: flex;
-    justify-content: center;
+.intro-text{
+    padding: 0px;
 }
 
-.courses{
-    width: 39vw;
-    height: 20vh;
-    padding: 20px 5px 10px;
-}
-
-.course-contents{
-    display: flex;
-    padding: 20px 10px;
-}
-
-.course-content{
+.course-content {
     width: 140px;
-}
+    height: 200px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(106, 137, 152, 0.2);
+    padding: 10px;
+  }
 
-.course img{
+  .course_img {
     width: 90px;
-    height: 10vh;
-}
+    height: 90px;
+    margin: 10px auto 0;
+  }
 
-.course p{
-    margin-bottom: 10px;
+.course-content p{
     font-weight: bold;
-    font-size: 15px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    white-space: nowrap;
 }
-
-.slider {
-    margin: 30px auto;
-    width: 80%;
-  }
-  
-  .slider img {
-    height: auto;
-    width: 100%;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
-    color: #000;
-  }
 
 .map iframe{
     height: 300px;
